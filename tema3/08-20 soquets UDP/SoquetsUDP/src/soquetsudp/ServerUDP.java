@@ -38,7 +38,7 @@ public class ServerUDP {
         
         
         String cadena =new String (peticion.getData());
-        String response=procesar(cadena);
+        String response="Hola "+cadena;
        
         byte[] mensaje = response.getBytes();
               
