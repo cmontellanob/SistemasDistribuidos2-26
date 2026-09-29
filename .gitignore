@@ -1,16 +1,34 @@
-# Compiled class file
+# =====================================================================
+#  .gitignore - Sistemas Distribuidos (SIS-258) 2-2026
+#  Repositorio multi-tecnología: Java (Maven / NetBeans Ant / Eclipse /
+#  IntelliJ) y .NET (ASP.NET Web Site, Web Services .asmx, C#).
+#  Las reglas son genéricas: aplican a cualquier carpeta/tema nuevo.
+# =====================================================================
+
+# ---------------------------------------------------------------------
+#  Sistema operativo
+# ---------------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+.DS_Store
+._*
+*~
+.directory
+
+# ---------------------------------------------------------------------
+#  JAVA - general
+# ---------------------------------------------------------------------
 *.class
-
-# Log file
 *.log
-
-# BlueJ files
 *.ctxt
-
-# Mobile Tools for Java (J2ME)
 .mtj.tmp/
+hs_err_pid*
+replay_pid*
 
-# Package Files #
+# Empaquetados (se generan al compilar)
 *.jar
 *.war
 *.nar
@@ -18,16 +36,172 @@
 *.zip
 *.tar.gz
 *.rar
+*.7z
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
-/repasojava/07-30/HolaMundo/target/
-/repasojava/07-30/Figuras/nbproject/private/
-/repasojava/07-30/Persona/build/
-/repasojava/07-30/Persona/nbproject/private/
-/tema3/08-10 sockes/holatcp/target/
-/tema3/08-10 sockes/hola-cliente-tcp/target/
-/tema3/08-20 soquets UDP/SoquetsUDP/build/
-/tema3/08-20 soquets UDP/SoquetsUDP/nbproject/private/
-/tema4/08-24/suma/target/
+# ---------------------------------------------------------------------
+#  Maven
+# ---------------------------------------------------------------------
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+**/.mvn/timing.properties
+**/.mvn/wrapper/maven-wrapper.jar
+# NetBeans + Maven
+nb-configuration.xml
+nbactions*.xml
+
+# ---------------------------------------------------------------------
+#  Gradle
+# ---------------------------------------------------------------------
+.gradle/
+!**/gradle/wrapper/gradle-wrapper.jar
+
+# ---------------------------------------------------------------------
+#  NetBeans (proyectos Ant)
+#  Se CONSERVAN: build.xml, manifest.mf, nbproject/project.xml,
+#  nbproject/project.properties, nbproject/build-impl.xml
+# ---------------------------------------------------------------------
+build/
+dist/
+nbbuild/
+nbdist/
+.nb-gradle/
+**/nbproject/private/
+
+# ---------------------------------------------------------------------
+#  Eclipse / VS Code (Java)
+# ---------------------------------------------------------------------
+.metadata/
+.settings/
+.classpath
+.project
+.factorypath
+.apt_generated/
+.recommenders/
+.loadpath
+out/
+**/.vscode/*
+!**/.vscode/settings.json
+!**/.vscode/launch.json
+!**/.vscode/extensions.json
+
+# ---------------------------------------------------------------------
+#  IntelliJ IDEA
+# ---------------------------------------------------------------------
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ---------------------------------------------------------------------
+#  .NET / Visual Studio
+# ---------------------------------------------------------------------
+# Carpeta oculta de Visual Studio (índices Copilot, .suo, layouts,
+# applicationhost.config de IIS Express, etc.)
+.vs/
+
+# Opciones de usuario
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+launchSettings.json
+
+# Salidas de compilación (proyectos .csproj / SDK)
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Bin: se ignora todo su contenido, PERO se conservan los archivos
+# *.refresh, que en los proyectos "ASP.NET Web Site" (App_Code, .asmx,
+# sin .csproj) son las referencias que permiten a Visual Studio volver
+# a copiar las DLL desde la carpeta packages/ al restaurar NuGet.
+**/[Bb]in/**
+!**/[Bb]in/**/
+!**/[Bb]in/**/*.refresh
+
+# NuGet (se restaura con "Restaurar paquetes NuGet")
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+.nuget/
+
+# Archivos temporales de compilación / depuración
+*.pdb
+*.ilk
+*.obj
+*.pch
+*.ipdb
+*.iobj
+*.tlog
+*.tmp
+*.tmp_proj
+*.vspscc
+*.vssscc
+*.builds
+*.pidb
+*.svclog
+*.scc
+*.cache
+!?*.[Cc]ache/
+*_i.c
+*_p.c
+*_h.h
+*.meta
+
+# Publicaciones
+PublishScripts/
+*.[Pp]ublish.xml
+*.azurePubxml
+*.pubxml
+*.publishproj
+PrecompiledWeb/
+
+# ReSharper / Rider
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Resultados de pruebas
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+TestResult.xml
+coverage*.json
+coverage*.xml
+*.coverage
+*.coveragexml
+
+# ---------------------------------------------------------------------
+#  Node (por si algún tema usa JS)
+# ---------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+
+# ---------------------------------------------------------------------
+#  Variables de entorno / credenciales
+# ---------------------------------------------------------------------
+.env
+.env.*
+!.env.example
