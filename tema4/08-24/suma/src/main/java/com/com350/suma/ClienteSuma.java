@@ -14,6 +14,7 @@ public class ClienteSuma {
   public static void main(String[] a) throws Exception {
     Registry reg = LocateRegistry.getRegistry(1099);
     InterfazSuma s = (InterfazSuma) reg.lookup("Suma");
+    
     System.out.println(s.sumar(7, 5));  // 12
   }
 }

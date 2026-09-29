@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\usfx\\2-2026\\SistemasDistribuidos2-26\\tema7\\09-17\\HolaMundo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A97D887-140A-EE15-55AE-C91E6B918CCC}|D:\\usfx\\2-2026\\SistemasDistribuidos2-26\\tema7\\09-17\\HolaMundo\\HolaMundo|d:\\usfx\\2-2026\\sistemasdistribuidos2-26\\tema7\\09-17\\holamundo\\holamundo\\app_code\\hola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A97D887-140A-EE15-55AE-C91E6B918CCC}|D:\\usfx\\2-2026\\SistemasDistribuidos2-26\\tema7\\09-17\\HolaMundo\\HolaMundo|solutionrelative:holamundo\\app_code\\hola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 156,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Hola.cs",
+              "DocumentMoniker": "D:\\usfx\\2-2026\\SistemasDistribuidos2-26\\tema7\\09-17\\HolaMundo\\HolaMundo\\App_Code\\Hola.cs",
+              "RelativeDocumentMoniker": "HolaMundo\\App_Code\\Hola.cs",
+              "ToolTip": "D:\\usfx\\2-2026\\SistemasDistribuidos2-26\\tema7\\09-17\\HolaMundo\\HolaMundo\\App_Code\\Hola.cs",
+              "RelativeToolTip": "HolaMundo\\App_Code\\Hola.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T20:32:45.69Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
