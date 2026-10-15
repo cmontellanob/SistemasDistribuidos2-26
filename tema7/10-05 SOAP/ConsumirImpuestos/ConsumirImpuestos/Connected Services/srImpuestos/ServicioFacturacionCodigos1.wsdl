@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="https://siat.impuestos.gob.bo/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:tns="https://siat.impuestos.gob.bo/FacturacionCodigos" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="ServicioFacturacionCodigos" targetNamespace="https://siat.impuestos.gob.bo/FacturacionCodigos" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="https://siat.impuestos.gob.bo/" location="https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionCodigos?wsdl=ServicioFacturacionCodigos.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="ServicioFacturacionCodigosSoapBinding" type="ns1:ServicioFacturacionCodigos">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="verificarNit">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="verificarNit">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="verificarNitResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verificarComunicacion">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="verificarComunicacion">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="verificarComunicacionResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cuisMasivo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="cuisMasivo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="cuisMasivoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cufd">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="cufd">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="cufdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="notificaCertificadoRevocado">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="notificaCertificadoRevocado">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="notificaCertificadoRevocadoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cuis">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="cuis">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="cuisResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cufdMasivo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="cufdMasivo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="cufdMasivoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioFacturacionCodigos">
+    <wsdl:port name="ServicioFacturacionCodigosPort" binding="tns:ServicioFacturacionCodigosSoapBinding">
+      <soap:address location="https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionCodigos" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
