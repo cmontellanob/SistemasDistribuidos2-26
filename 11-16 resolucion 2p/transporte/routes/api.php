@@ -1,13 +1,17 @@
 <?php
-use Illuminate\http\Request;
-use Illuminate\Support\Facades\Db;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
-$creartoken = function($email) {
- $h = base64_encode ( json_encode(['alg' =>'HS256','typ' => 'JWT']));
- $p = base64_encode(json_encode(['email' 0>]));   
-}
+// Genera un JWT HS256: header.payload.firma (base64url)
+$creartoken = function (string $email): string {
+    $secreto = 'clave_terminal_2026';
+    $b64 = fn (string $t) => rtrim(strtr(base64_encode($t), '+/', '-_'), '=');
 
-Artisan::command('inspire', function () {
-    $this->comment(Inspiring::quote());
-})->purpose('Display an inspiring quote');
+    $h = $b64(json_encode(['alg' => 'HS256', 'typ' => 'JWT']));
+    $p = $b64(json_encode(['email' => $email, 'iat' => time(), 'exp' => time() + 3600]));
+    $f = $b64(hash_hmac('sha256', "$h.$p", $secreto, true));
+
+    return "$h.$p.$f";
+};
